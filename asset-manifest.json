@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TheHub-/static/css/main.7e998dc7.css",
+    "main.js": "/TheHub-/static/js/main.0528ca4b.js",
+    "index.html": "/TheHub-/index.html",
+    "main.7e998dc7.css.map": "/TheHub-/static/css/main.7e998dc7.css.map",
+    "main.0528ca4b.js.map": "/TheHub-/static/js/main.0528ca4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e998dc7.css",
+    "static/js/main.0528ca4b.js"
+  ]
+}
