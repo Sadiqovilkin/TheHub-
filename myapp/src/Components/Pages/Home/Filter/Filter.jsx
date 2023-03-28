@@ -40,21 +40,21 @@ const Filter = () => {
         <div className="col-3">
           <div className="btns" onClick={handleFilterKeyChange('b')}>
           <img src="https://www.highspeedtraining.co.uk/hub/wp-content/uploads/2018/06/icon-business.svg" className="category-icon" alt="Business Icon"/>
-            <button >Food Hygiene
+            <button > Business
             </button>
           </div>
         </div>
         <div className="col-3">
           <div className="btns" onClick={handleFilterKeyChange('c')}>
           <img src="https://www.highspeedtraining.co.uk/hub/wp-content/uploads/2018/06/icon-safety.svg" className="category-icon" alt="Health &amp; Safety Icon"/>
-            <button >Food Hygiene
+            <button > Health & Safety
             </button>
           </div>
         </div>
         <div className="col-3">
-          <div className="btns" onClick={handleFilterKeyChange('d')}>
+          <div className="btns border-0" onClick={handleFilterKeyChange('d')}>
           <img src="https://www.highspeedtraining.co.uk/hub/wp-content/uploads/2018/06/icon-safeguarding.svg" className="category-icon" alt="Safeguarding Icon"/>
-            <button >Food Hygiene
+            <button >Safeguarding
             </button>
           </div>
         </div>

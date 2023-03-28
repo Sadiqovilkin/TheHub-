@@ -12,14 +12,14 @@ const Footer = () => {
     </div>
     <div className="container-fluid py-5">
 <div className="row py-5 mb-5">
-  <div className="col-lg-4">
+  <div className="col-lg-4 g-5">
     <div className="foot_logo">
       <img src="https://ui.highspeedtraining.co.uk/components/2022.06.09.281/images/svg/logo-blue.svg" alt="" />
     </div>
   </div>
-  <div className="col-lg-8">
+  <div className="col-lg-8 g-5">
   <div className="row">
-  <div className="col-lg-4">
+  <div className="col-4">
       <div className="foot_list">
         <ul>
         <li>About</li>
@@ -29,7 +29,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-    <div className="col-lg-4">
+    <div className="col-4">
       <div className="foot_list">
         <ul>
         <li>Support </li>
@@ -41,7 +41,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-    <div className="col-lg-4">
+    <div className="col-4">
       <div className="foot_list">
         <ul>
         <li>Social</li>

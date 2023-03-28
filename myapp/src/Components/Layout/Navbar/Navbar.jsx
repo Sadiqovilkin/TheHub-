@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai';
+import { BsList } from 'react-icons/bs';
 const Navbar = () => {
   return (
  <header>
@@ -63,7 +64,8 @@ const Navbar = () => {
                     </div>
                     <div className="col-12">
                         <div className="mobil_navbar">
-                            
+                            <AiOutlineSearch/>
+                            <BsList/>
                         </div>
                     </div>
                 </div>

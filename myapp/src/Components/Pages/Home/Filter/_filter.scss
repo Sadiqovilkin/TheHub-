@@ -7,10 +7,19 @@
       align-items: center;
       position: relative;
       border-right: 1px solid  #747374;
+      @media (max-width:762px) {
+       padding: 5px 20px;
+        
+    }
+   
       img{
           width: 52px;
           height: 52px;
           object-fit: contain;
+          @media (max-width:762px) {
+            display: none;
+            
+        }
       }
       button{
           border: none;
@@ -19,6 +28,10 @@
           line-height: 20px;
           font-weight: 500;
           background-color: transparent;
+          @media (max-width:762px) {
+            font-size: 14px;
+            
+        }
       }
       &::after{
           position: absolute;
