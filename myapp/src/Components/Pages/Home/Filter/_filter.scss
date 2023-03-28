@@ -1,0 +1,128 @@
+#filter{
+    .btns{
+      padding: 5px 30px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-right: 1px solid  #747374;
+      img{
+          width: 52px;
+          height: 52px;
+          object-fit: contain;
+      }
+      button{
+          border: none;
+          outline: none;
+          font-size: 17px;
+          line-height: 20px;
+          font-weight: 500;
+          background-color: transparent;
+      }
+      &::after{
+          position: absolute;
+          bottom: -2px;
+          left: 10%;
+          right: 0;
+          content: "";
+          width: 80%;
+          height: 0px;
+          background-color: $Light-blue-color;
+          transition: .3s ease-in-out;
+      }
+      &:hover{
+          &::after{
+              height: 2px;
+          }
+          button{
+              color: $Light-blue-color;
+          }
+      }
+    }
+  .categorys{
+      background-color: #e4e4e4;
+      .cart{
+          width: 100%;
+          padding: 0 0 20px;
+          box-shadow: 0 0 6px #b6b5b5;
+          border-radius: 20px;
+          overflow: hidden;
+          background-color: $White-color;
+          .card_img{
+              width: 100%;
+              height: 200px;
+              position: relative;
+              img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+              }
+              .img_overlay{
+                  position: absolute;
+                  bottom: 15%;
+                  left: 0;
+                  span{
+                      padding: 5px 20px ;
+                      background-color: #0000009a;
+                      color: #fff;
+                      font-size: 15px;
+                      font-weight: 600;
+                      line-height: 33px;
+                      text-transform: uppercase;
+                  }
+              }
+          }
+          .card_text{
+              padding: 30px;
+              h1{
+                  color: #000;
+                  font-size: 25px;
+                  font-weight: 600;
+                  line-height: 33px;
+                  transition: .2s linear;
+                  &:hover{
+                      text-decoration: underline;
+                  }
+              }
+              span{
+                  color: #747374;
+                  font-size: 15px;
+                  font-weight: 600;
+                  line-height: 33px;
+                  transition: .2s linear;
+                  &:hover{
+                      color: $Orange-color;
+                      text-decoration: underline;
+                  }
+              }
+              p{
+                  margin: 17px 0 ;
+                  color: #303030;
+                  font-size: 17px;
+                  font-weight: 600;
+                  line-height: 33px;
+              }
+          }
+        }
+        .view{
+          width: 90%;
+          background-color: $Dark-orange-color;
+          border-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 15px;
+          box-shadow: 0 3px 4px rgba(0,0,0,0.16);
+          cursor: pointer;
+          span{
+              color: $White-color;
+              font-size: 1.1em;
+           font-weight: 600;
+  
+          }
+        }
+  }
+     
+  
+  }

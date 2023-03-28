@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "Partial/variables";
+@import "Partial/variables";
+@import "../Components/Layout/Navbar/navbar";
+@import "../Components/Pages/Home/BgImg/bgimg";
+@import "../Components/Pages/Home/Filter/filter";
+@import "../Components/Layout/Footer/footer";
