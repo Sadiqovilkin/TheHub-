@@ -1,126 +1,158 @@
-header{
-    background-color: $Dark-blue-color;
-    color: $White-color;
-    .logo{
-        width: 100%;
-        height: 90px;
-        @media (max-width:762px) {
-            height: 40px;
-            
-        }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+header {
+  background-color: $Dark-blue-color;
+  color: $White-color;
+  position: relative;
+  .logo {
+    width: 100%;
+    height: 90px;
+    @media (max-width: 762px) {
+      height: 40px;
     }
-    .search_list{
-        @media (max-width:762px) {
-            display: none;
-           }
-        ul{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            gap: 15px;
-            li{
-                list-style: none;
-                display: flex;
-                align-items: center;
-                gap: 7px;
-
-                a{
-                    color: $White-color;
-                     font-size: 17px;
-                     font-weight:400 ;
-                     line-height: 22px;
-                     transition: .2s linear;
-                     &:hover{
-                        color: $Orange-color;
-                     }
-                }
-                .search{
-                    width: 360px;
-                    display: flex;
-                    align-items: center;
-                    background-color: $White-color;
-                    border-radius: 32px;
-                    overflow: hidden;
-                    padding: 7px 7px;
-                  
-                    input{
-width: 90%;
-border: none;
-&:focus-visible{
-    outline: none;
-    border: none    ;
-}
-                    }
-                    svg{
-                        color: black;
-                        width: 10%;
-                        height: 23px;
-
-                    }
-                }
-                &:nth-child(3){
-                 a{
-                    text-decoration: none;
-                    &:hover{
-                        color: $White-color;
-                     }
-                 }   
-
-                }
-
-
-
-            }
-        }
-
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
-    .list{
-        padding: 10px 0;
-        @media (max-width:762px) {
-            display: none;
-           }
-        ul{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            li{
-                padding: 14px 20px;
-                list-style: none;
-                transition: .2s linear;
-                font-size: 20px;
-                font-weight: 400;
-                &:hover{
-                   color: $Orange-color;
-                }
-                &:nth-child(4){
-                    border-right: 1px solid #3e5079;
-                }
-            }
-        }
+  }
+  .search_list {
+    @media (max-width: 762px) {
+      display: none;
     }
-    .mobil_navbar{
-        @media (min-width:762px) {
-            display: none;
-           }
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 15px;
+      li {
+        list-style: none;
         display: flex;
         align-items: center;
-        justify-content: end;
-        gap: 20px;
-        svg{
-width:35px;
-height:35px;
-&:hover{
-    color: $Orange-color;
-}
+        gap: 7px;
+
+        a {
+          color: $White-color;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 22px;
+          transition: 0.2s linear;
+          &:hover {
+            color: $Orange-color;
+          }
         }
+        .search {
+          width: 360px;
+          display: flex;
+          align-items: center;
+          background-color: $White-color;
+          border-radius: 32px;
+          overflow: hidden;
+          padding: 7px 7px;
+
+          input {
+            width: 90%;
+            border: none;
+            &:focus-visible {
+              outline: none;
+              border: none;
+            }
+          }
+          svg {
+            color: black;
+            width: 10%;
+            height: 23px;
+          }
+        }
+        &:nth-child(3) {
+          a {
+            text-decoration: none;
+            &:hover {
+              color: $White-color;
+            }
+          }
+        }
+      }
     }
+  }
+  .list {
+    padding: 10px 0;
+    @media (max-width: 762px) {
+      display: none;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      li {
+        padding: 14px 20px;
+        list-style: none;
+        transition: 0.2s linear;
+        font-size: 20px;
+        font-weight: 400;
+        &:hover {
+          color: $Orange-color;
+        }
+        &:nth-child(4) {
+          border-right: 1px solid #3e5079;
+        }
+      }
+    }
+  }
+  .mobil_navbar {
+    @media (min-width: 762px) {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    svg {
+      width: 35px;
+      height: 35px;
+      &:hover {
+        color: $Orange-color;
+      }
+    }
+    .mobile-menu-area {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      .rmlm-item-container {
+        background-color: #3e5079 !important;
+        .rmlm-item-wrapper {
+          background-color: #3e5079 !important;
+          color: $White-color !important;
+          .rmlm-icon-container {
+            display: none;
+          }
+          .rmlm-icon-container {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        .level-1 {
+          margin: 0;
+          .rmlm-item-wrapper {
+            background-color: $White-color !important;
+            color: black !important;
+          }
+          &:nth-child(6) {
+            .rmlm-item-wrapper {
+              background-color: white !important;
+            }
+          }
+        }
+        &:nth-child(6) {
+          .rmlm-item-wrapper {
+            background-color: $Orange-color !important;
+          }
+        }
+      }
+    }
+  }
 }
